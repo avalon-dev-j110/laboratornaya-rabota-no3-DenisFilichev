@@ -6,7 +6,7 @@ public class FibonacciInitializer implements Initializer {
 
     public void initialize(int[] array) {
         //Инициализация массива, размером в одну или две переменные
-        if (array.length>2){
+        if (array.length>=2){
             array[0]=0;
             array[1]=1;
         }else if (array.length==1){array[0]=0;}

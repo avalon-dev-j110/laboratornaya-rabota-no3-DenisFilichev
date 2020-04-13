@@ -23,7 +23,7 @@ public class ShellSort implements Sort {
                         array[backward] = array[backward] + array[backward-d];
                         array[backward-d] = array[backward] - array[backward-d];
                         array[backward] = array[backward]-array[backward-d];
-                        backward--;
+                        if (backward-d>0) backward--;
                     }//end while
                 }//end if
             }//end for
